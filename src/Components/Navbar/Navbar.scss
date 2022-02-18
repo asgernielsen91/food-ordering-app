@@ -1,0 +1,83 @@
+@import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
+
+.active-link {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(90%) saturate(2520%) hue-rotate(311deg) brightness(98%) contrast(98%);
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: -12px;
+    height: 35px;
+    border-left: 3px solid $yellow;
+    color: $yellow;
+  }
+}
+
+.not-active-link {
+  @include transition();
+  filter: brightness(0) saturate(100%) invert(41%) sepia(10%) saturate(124%) hue-rotate(187deg) brightness(93%) contrast(84%);
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(93%) sepia(90%) saturate(2520%) hue-rotate(311deg) brightness(98%) contrast(98%);
+  }
+}
+
+.navbar {
+  height: 100vh;
+  width: 80px;
+  background-color: $lightgrey;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .navbar__menu--line {
+      width: 20px;
+      height: 3px;
+      border-radius: 10px;
+      background-color: $darkgrey;
+      position: relative;
+      margin-top: 50px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: $darkgrey;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        width: 15px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: $darkgrey;
+      }
+    }
+  }
+
+  .navbar__links {
+    width: 23px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+
+    li {
+      list-style: none;
+      padding-top: 40px;
+    }
+  }
+}

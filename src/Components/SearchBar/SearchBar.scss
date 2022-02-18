@@ -1,0 +1,20 @@
+@import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
+
+.searchbar {
+  margin: 40px;
+
+  .searchbar__input {
+    background: url(../../Assets/searchbar-icon.svg) no-repeat 10px 10px;
+    background-size: 18px;
+    padding: 12px 35px;
+    width: 100%;
+    background-color: $lightgrey;
+    border: none;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: $darkgrey;
+      padding-left: 20px;
+    }
+  }
+}

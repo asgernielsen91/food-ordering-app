@@ -1,0 +1,70 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerBg($size: cover, $position: center, $repeat: no-repeat) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+@mixin overlay($r, $g, $b, $a) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($r, $g, $b, $a);
+}
+
+@mixin fontStyle($size: false, $colour: false, $weight: false, $lh: false) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $colour {
+    color: $colour;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+}
+
+@mixin positionAbs($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin transition($speed: 200ms, $transistionOn: all) {
+  -moz-transition: $speed all ease-in-out;
+  -o-transition: $speed all ease-in-out;
+  -webkit-transition: $speed all ease-in-out;
+  transition: $speed all ease-in-out;
+  -moz-transition-property: $transistionOn;
+  -o-transition-property: $transistionOn;
+  -webkit-transition-property: $transistionOn;
+  transition-property: $transistionOn;
+}
