@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  overflow: hidden;
 
   .banner__text {
     border-radius: 10px 0 0 10px;
@@ -22,7 +21,7 @@
       position: absolute;
       top: 50%;
       left: 12%;
-      transform: translate(-50%, -50%);
+      transform: translate(-10%, -50%);
       z-index: 99;
 
       &::after {
@@ -36,10 +35,10 @@
       }
 
       &::before {
-        content: url("../../Assets/triangle.svg");
+        content: url("../../Assets/triangle-2.svg");
         filter: brightness(0) saturate(100%) invert(97%) sepia(88%) saturate(3782%) hue-rotate(314deg) brightness(93%)
           contrast(96%);
-        top: 90px;
+        top: 82px;
         left: -25px;
         position: absolute;
         transform: rotate(55deg);
@@ -52,7 +51,7 @@
 
     &::after {
       background-color: $yellow;
-      content: " ";
+      content: "";
       width: 55%;
       height: 100%;
       position: absolute;
@@ -63,10 +62,9 @@
   }
 
   .banner__image {
-    width: 45%;
+    width: 47%;
     height: 250px;
     margin-left: -100px;
-    margin-right: 0px;
     object-fit: cover;
     object-position: 30% 20%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);

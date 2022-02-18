@@ -6,34 +6,10 @@ type IMyOrdensProps = {}
 
 const MyOrders = (props: IMyOrdensProps) => {
   return (
-    <main className="container">
-      <div className="flex-parent">
-        <div className="flex-child-2">
-          <aside className="orders">
-            <p>My orders</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-            <p>asfdkmasfkmds</p>
-          </aside>
-        </div>
-      </div>
-    </main>
+    <aside className="orders">
+      <h3 className="orders__title">My orders</h3>
+      <p className="orders__title--delivery">Delivery address</p>
+    </aside>
   )
 }
 

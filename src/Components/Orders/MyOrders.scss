@@ -1,4 +1,13 @@
 @import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
 
 .orders {
+  .orders__title {
+    @include fontStyle(16px, $fontblack, 700, 32px);
+    letter-spacing: 0.4px;
+  }
+
+  .orders__title--delivery {
+    @include fontStyle(14px, $darkgrey, 700, 21px);
+    padding-top: 50px;
+  }
 }

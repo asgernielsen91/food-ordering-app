@@ -1,0 +1,9 @@
+@import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
+
+.container {
+  width: calc(100vw - 80px);
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

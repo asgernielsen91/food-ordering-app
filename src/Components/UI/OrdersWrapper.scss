@@ -1,0 +1,8 @@
+@import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
+
+.col-2 {
+  width: 30%;
+  background-color: $lightgrey;
+  height: 100vh;
+  padding: 40px;
+}
