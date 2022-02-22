@@ -1,0 +1,36 @@
+@import "../../Styles/variables", "../../Styles/mixins", "../../Styles/globalrules";
+
+.categories {
+  margin: 40px 40px 0px 40px;
+  border-bottom: 2.5px solid $lightgrey;
+
+  ul {
+    padding-right: 40px;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    height: 30px;
+  }
+
+  a {
+    @include fontStyle(15px, $fontblack, 700, 21px);
+    margin-right: 75px;
+    text-decoration: none;
+
+    &:hover {
+      color: $yellow;
+      padding-bottom: 10px;
+      border-bottom: 3px solid $yellow;
+      transition: border-bottom-color 2000ms;
+    }
+
+    &:active {
+      color: $yellow;
+      padding-bottom: 7px;
+      border-bottom: 3px solid $yellow;
+      transition: border-bottom-color 2000ms;
+    }
+  }
+}

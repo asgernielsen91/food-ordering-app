@@ -4,7 +4,7 @@
   filter: brightness(0) saturate(100%) invert(93%) sepia(90%) saturate(2520%) hue-rotate(311deg) brightness(98%) contrast(98%);
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     right: -28px;
